@@ -1,0 +1,45 @@
+let dizi = [2,5,8,11,15,17];
+
+let higherten = dizi.filter(function(sayi) {
+    return sayi > 10;
+});
+
+let carpilmis = higherten.map(function(sayi) {
+    return sayi * 5;
+});
+
+console.log(carpilmis);
+
+// Uygun dizi metotlarını kullanarak  yukarıda verilen dizinin elemanları içinde 10'dan büyük olan elemanların 5'er katından oluşan yeni bir dizi oluşturun. 
+
+// -----------------------------------------------------------------------------
+
+let dizi = [3, 6, 9, 14, 16];
+
+function myFunction(sayi) {
+    return sayi > 5;
+}
+
+const sonuc1 = dizi.some(myFunction);
+if (sonuc1 == true) {
+    console.log("Beşten büyük bir eleman mevcut.")
+}
+else{
+    console.log("Beşten büyük bir eleman mevcut değil.")
+}
+
+// Uygun dizi metotlarını kullanarak, yukarıdaki dizi için aşağıdaki şartları sağlayan myFunction fonksiyonunu yazın.
+
+// Elemanların arasında 5'ten büyük olan olan bir eleman varsa konsola "Beşten büyük bir eleman mevcut." yoksa "5'ten büyük eleman mevcut değil." yazdır.
+
+// -----------------------------------------------------------------------------
+
+let dizi = [2,3,4];
+let sonuc = 1;
+
+for(let i = 0; i < dizi.length; i++){
+    sonuc = dizi[i] * sonuc
+}
+console.log(sonuc);
+
+// Uygun dizi metodunu kullanarak yukarıda verilen dizinin elemanlarının çarpımının sonucunu (24) veren bir fonksiyon yazınız.
